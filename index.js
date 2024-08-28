@@ -5,10 +5,7 @@ const summarizeText = require('./summarize.js');
 
 // Parses JSON bodies (as sent by API clients)
 app.use(express.json());
-
-// Serves static files from the 'public' directory
-app.use(express.static('public'));
-
+app.use(express.static(__dirname));
 //adding endpoint for summarise
 app.post('/summarize', (req, res) => {
 
