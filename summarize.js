@@ -17,7 +17,7 @@ async function summarizeText(text) {
   let config = {
     method: 'post',
     maxBodyLength: Infinity,
-    url: 'https://api-inference.huggingface.co/models/facebook/bart-large-cnn',
+    url: 'https://api-inference.huggingface.co/models/facebook/bart-large-cnn/',
     headers: {
       'Content-Type': 'application/json',
       'Authorization': 'Bearer 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'
